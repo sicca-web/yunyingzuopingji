@@ -352,6 +352,44 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   line-height: 1.5;
 }
 
+/* === Work Impact (likes + effectiveness) === */
+.work-impact {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line-soft);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: baseline;
+}
+
+.work-likes {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.cat-koubo .work-likes { background: var(--c-koubo-bg); color: var(--c-koubo); }
+.cat-gonglue .work-likes { background: var(--c-gonglue-bg); color: var(--c-gonglue); }
+.cat-guanggao .work-likes { background: var(--c-guanggao-bg); color: var(--c-guanggao); }
+
+.work-impact-text {
+  font-size: 12px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  flex: 1;
+  min-width: 0;
+}
+
+.work-impact-text strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .work-tag {
   display: inline-block;
   font-family: var(--mono);
@@ -520,10 +558,10 @@ a:focus-visible, button:focus-visible {
   <aside class="identity">
     <div class="identity-top">
       <div class="identity-mark">PORTFOLIO / 2026</div>
-      <div class="identity-name">运营作品集</div>
-      <div class="identity-role">新疆旅游内容运营<br>口播 · 攻略 · 广告定制</div>
+      <div class="identity-name">唐福兵</div>
+      <div class="identity-role">23岁 · 新疆旅游内容运营<br>口播 · 攻略 · 广告定制</div>
       <div class="identity-bio">
-        聚焦新疆旅游赛道的内容运营，覆盖伊犁、赛里木湖、禾木、独库公路等核心线路。以实地口播、攻略图文、广告定制三种形态持续产出，兼顾信息密度与视觉表达。
+        聚焦新疆旅游赛道的内容运营，覆盖伊犁、赛里木湖、禾木、独库公路等核心线路。以实地口播、攻略图文、广告定制三种形态持续产出，兼顾信息密度与视觉表达。运营「山川回响」「新疆旅游宾哥」双账号矩阵，累计获赞超 5.5 万。
       </div>
       <nav class="identity-nav">
         <a href="#section-koubo">
@@ -545,6 +583,9 @@ a:focus-visible, button:focus-visible {
     </div>
     <div class="identity-bottom">
       <div class="identity-contact">
+        <span>姓名</span> 唐福兵<br>
+        <span>年龄</span> 23岁<br>
+        <span>邮箱</span> siccatang<br>
         <span>账号矩阵</span><br>
         山川回响 · 新疆旅游宾哥<br>
         <span>区域</span><br>
@@ -598,6 +639,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">FIELD REPORT</span>
             <div class="work-title">12月17日 新疆赛里木湖现状</div>
             <div class="work-desc">实地播报赛里木湖冰推情况，辟谣不实信息，为出行决策提供第一手参考</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 144</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>冬季赛里木湖"冰推"是小红书热搜话题，该条以"别听xhs"的反差话术切入，用现场画面直接辟谣，精准拦截搜索流量。144 赞对于冬季小众时段属正常水平，核心价值在于<strong>信任建立</strong>——让潜在游客养成"看宾哥实况再决定出发"的习惯。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -608,6 +653,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">FIELD REPORT</span>
             <div class="work-title">7月4日 新疆赛里木湖实况</div>
             <div class="work-desc">夏季赛里木湖现场实况播报，帮助游客判断是否出行</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 349</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>7月为新疆旅游旺季，"看完决定来不来"直击决策痛点。349 赞较冬季条目增长 142%，验证了<strong>旺季流量红利 + 实况决策类口播</strong>的叠加效应。出镜者墨镜手套的夏日造型增强代入感，画面中人群密度也成为"值不值得去"的直观判据。</div>
+            </div>
           </div>
         </div>
       </div>
@@ -628,7 +677,11 @@ a:focus-visible, button:focus-visible {
           <div class="work-meta">
             <span class="work-tag">BUDGET GUIDE</span>
             <div class="work-title">冬季坐火车来新疆，需要多少预算？</div>
-            <div class="work-desc">交通预算攻略，点赞 1.2 万</div>
+            <div class="work-desc">交通预算攻略，以问答式标题切入用户痛点</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 1.2万</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>本作品集<strong>流量天花板</strong>。"坐火车+预算"精准命中低预算旅行人群的高频搜索词，1.2万赞证明选题切中了大众决策焦虑。室内雪景封面营造"冬季新疆"氛围感，数字型标题激发点击欲，属于<strong>搜索流量 + 情绪共鸣</strong>双驱动的爆款模型。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -639,6 +692,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">PHOTO SPOTS</span>
             <div class="work-title">赛里木湖 5 个绝佳打卡机位</div>
             <div class="work-desc">精选机位指南，帮助游客拍出最佳照片</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 378</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>"码住码住"的收藏引导话术 + "5个"数字清单体提升收藏率。封面女子奔跑画面传递自由感，378 赞在景点攻略中属中上水平，说明<strong>机位类内容</strong>具有长尾搜索价值，持续被计划出行的用户检索收藏。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -649,6 +706,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">CONDITION</span>
             <div class="work-title">1月21日 赛湖没冰推了</div>
             <div class="work-desc">26年1月赛里木湖冰推结束实况更新</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 160</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>与口播条目形成<strong>内容矩阵联动</strong>——口播负责辟谣引流，本条攻略负责补充时间线信息。160 赞说明冰推话题在冬季有稳定搜索量。冰湖实景封面直接传递"已经没了"的视觉信息，降低用户决策成本。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -659,6 +720,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">CONDITION</span>
             <div class="work-title">1.14号禾木现状</div>
             <div class="work-desc">禾木冬季旅游实况，提醒游客注意出行条件</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 266</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>"真的会崩溃"的情绪化标题引发好奇心，266 赞高于同期赛里木湖条目，说明<strong>禾木冬季话题热度更高</strong>。雪地拖行李的画面具有强视觉冲击力，负面体验的真实呈现反而增强账号可信度，帮助用户建立合理预期。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -669,6 +734,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">ROUTE GUIDE</span>
             <div class="work-title">伊犁小环线 8 天 7 晚封神路线</div>
             <div class="work-desc">经典不绕路路线，含景点门票、距离耗时</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 242</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>环形路线图作为封面具有<strong>高信息密度 + 高可保存性</strong>，用户一键截图即可带走完整行程。"封神路线""不绕路"话术降低决策摩擦。242 赞证明路线图类内容是攻略板块的稳定流量来源，适合作为账号长期置顶笔记。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -679,6 +748,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">ITINERARY</span>
             <div class="work-title">伊犁 7 日行程详解</div>
             <div class="work-desc">D1-D7 逐日行程安排，含赛里木湖、那拉提等核心景点</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 3380</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>本条为本作品集<strong>攻略类流量第二</strong>，3380 赞远超均值。"走进旷野"的文艺感标题精准切中都市人群的逃离心理，7天行程+小团拼游的组合覆盖了核心目标人群。绿色草地+卡通插画的封面设计在信息流中<strong>高辨识度</strong>，暖色调与新疆草原视觉一致。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -689,6 +762,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">THEME GUIDE</span>
             <div class="work-title">伊犁 7 天 6 晚 | 治愈系夏天</div>
             <div class="work-desc">5-6月团期行程招募，以情绪价值切入攻略内容</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 135</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>"治愈系"的情绪向标题在攻略类中差异化定位，135 赞说明纯情绪向攻略在搜索流量上弱于信息向。但此类内容<strong>收藏转化率通常更高</strong>，因为用户会保存为"梦想旅行"清单，长尾价值不可忽视。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -699,6 +776,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">CITY GUIDE</span>
             <div class="work-title">伊宁 7 天游玩攻略 · 不赶路</div>
             <div class="work-desc">慢节奏行程规划，拒绝走马观花</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 626</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>626 赞在攻略类中属<strong>第一梯队</strong>。"拒绝赶路"精准切中跟团游痛点，白色长裙女性在草原行走的封面兼具美感与代入感。该条证明"反套路旅行"定位在小红书具有高共鸣度，是账号差异化标签的核心支撑。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -709,6 +790,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">VIEWING TIP</span>
             <div class="work-title">赛里木湖粉调天空在哪看</div>
             <div class="work-desc">2026年最新粉色天空观赏位置指南</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 2013</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>2013 赞位列攻略类<strong>前三</strong>。"粉调天空"是赛里木湖独有的视觉IP，具有强传播力。该条证明<strong>稀缺自然现象 + 精确位置指引</strong>的组合是高赞公式，用户既为美景停留，也为"去哪能看到"而收藏，双重驱动下数据表现优异。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -719,6 +804,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">TRAFFIC INFO</span>
             <div class="work-title">独库公路通行新规 · 免预约</div>
             <div class="work-desc">6月1日通行信息及免预约攻略</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 3403</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>3403 赞为攻略类<strong>流量第二</strong>。独库公路是新疆旅游的顶级热搜词，"通行新规+免预约"属于时效性政策信息，具有极强搜索拦截能力。该条验证了<strong>政策信息差 = 流量密码</strong>——第一时间发布官方通行政策，用户会因"怕错过"而快速收藏转发。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -729,6 +818,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">COMPARISON</span>
             <div class="work-title">南疆 vs 北疆，你更喜欢哪个？</div>
             <div class="work-desc">两大区域对比，帮助游客选择方向</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 799</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>799 赞表现优秀。"A vs B"对比体是小红书高互动模板，天然激发用户站队评论。红色岩石 vs 雪山森林的上下分割封面<strong>一图胜千言</strong>，799 赞中评论互动占比预计较高，属于<strong>互动驱动型内容</strong>，算法会因评论量给予额外流量推荐。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -739,6 +832,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">SEASONAL ROUTE</span>
             <div class="work-title">新疆 4-5 月热门路线</div>
             <div class="work-desc">南北疆春季路线规划，标注核心景点</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 2013</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>2013 赞表现强劲。4-5月是新疆旅游规划的高峰搜索期，"热门路线"属于<strong>季节性流量爆款</strong>。地图式封面信息密度高，用户可直接截图使用。该条与独库公路条目共同验证了<strong>时效+路线图</strong>是春季获客的核心内容形态。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -749,6 +846,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">ACCOUNT OVERVIEW</span>
             <div class="work-title">小红书账号笔记合集</div>
             <div class="work-desc">山川回响账号内容矩阵一览，覆盖 Q&A、行程、旅行日历等多类型攻略</div>
+            <div class="work-impact">
+              <span class="work-likes">获赞 2209 · 粉丝 114</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>该截图展示账号笔记矩阵的全貌，2209 获赞与 114 粉丝的比例约 19:1，说明<strong>单条内容爆文率高但粉丝留存弱</strong>。这是典型的小红书搜索流量型账号特征——用户通过搜索获取信息后不关注，需要在内容中加强人设露出和关注引导，将流量转化为粉丝资产。</div>
+            </div>
           </div>
         </div>
       </div>
@@ -770,6 +871,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">RECRUITMENT AD</span>
             <div class="work-title">伊犁 7 天早鸟招募</div>
             <div class="work-desc">4080/人 · 草原+杏花+高奢 VILLA · 四大核心卖点包装</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 118</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>广告定制类内容的点赞通常低于攻略类，118 赞在广告类中属正常水平。"别再为低价团买单"的<strong>痛点营销</strong>话术有效区隔竞品，"真潮流/真纯玩/真省心/真放心"四大卖点结构清晰。该条核心价值不在于点赞，而在于<strong>私信咨询转化</strong>——广告类内容应以留资率为核心KPI。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -780,6 +885,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">RECRUITMENT AD</span>
             <div class="work-title">伊犁 8 日小团 · 夏日招募</div>
             <div class="work-desc">5-7月团期宣传海报，夏日主题视觉设计</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 118</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>夏日主题海报以绿色为主色调，与伊犁草原视觉一致。"5-7月"覆盖暑期出行决策窗口，时间标注明确。118 赞在广告类中属稳定水平，该条的价值在于<strong>团期信息的可视化呈现</strong>——用户在评论区可直接咨询具体日期，缩短转化链路。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -790,6 +899,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">PRODUCT AD</span>
             <div class="work-title">4 天北疆伊犁 · 1980/人</div>
             <div class="work-desc">短途产品定价宣传，突出性价比与玩转小团</div>
+            <div class="work-impact">
+              <span class="work-likes">点赞 378</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>378 赞在广告类中表现突出。"1980/人"的价格前置策略降低了用户决策门槛，4天短途产品降低了试错成本，适合作为<strong>引流款产品</strong>。团队合影封面传递真实感，与"玩转小团"的卖点呼应。该条验证了<strong>低价产品 + 真实场景</strong>的广告内容也能获得不错的自然流量。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -800,6 +913,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">ACCOUNT BRAND</span>
             <div class="work-title">山川回响 · 账号主页</div>
             <div class="work-desc">1.2万粉丝 · 4.1万获赞 · 品牌形象与定位展示</div>
+            <div class="work-impact">
+              <span class="work-likes">粉丝 1.2万 · 获赞 4.1万</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>「山川回响」作为主账号，1.2万粉丝积累 4.1万获赞，赞粉比约 3.4:1，属于<strong>健康运营账号</strong>。"在风里听故事，星空下畅谈"的简介兼顾文学性与品牌调性，"拒绝打卡式旅行"直接传递差异化定位。"单人拼团|多人包车定制|2-10天"的服务结构清晰，是广告转化的重要入口。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -810,6 +927,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">DESIGN PROCESS</span>
             <div class="work-title">广告物料设计过程 — PS 工作台</div>
             <div class="work-desc">海报设计工作界面，展示从素材到成品的制作流程</div>
+            <div class="work-impact">
+              <span class="work-likes">设计全链路</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>此截图展示广告物料的<strong>幕后制作过程</strong>，PS工作台中的图层管理、插画素材和文字排版一览无余。在作品集中呈现设计过程而非仅展示成品，能够体现<strong>从文案策划到视觉执行的全链路能力</strong>，对招聘方/客户而言是"可独立交付"的有力证明。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -820,6 +941,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">DESIGN PROCESS</span>
             <div class="work-title">广告物料设计过程 — 多素材排版</div>
             <div class="work-desc">多图层设计工作界面，展示视觉物料的排版与合成</div>
+            <div class="work-impact">
+              <span class="work-likes">设计全链路</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>第二张PS工作台截图展示了<strong>多素材合成排版</strong>的复杂度——插画、风景图、文字框在不同图层中精细组合。这体现了运营人员不仅具备内容策划能力，更具备<strong>视觉物料的独立交付能力</strong>，从选题→文案→设计→发布形成完整闭环。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -830,6 +955,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">DESIGN PROCESS</span>
             <div class="work-title">广告物料设计过程 — 完整工作流</div>
             <div class="work-desc">从插画素材到行程排版的全流程设计工作台</div>
+            <div class="work-impact">
+              <span class="work-likes">设计全链路</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>第三张PS工作台截图展示了<strong>完整的设计工作流</strong>——"我们在繁野里相遇"的文案、行程安排的排版、插画素材的融合，均在一个工作文件中完成。横版画面展示了更大的设计画幅，体现对<strong>多尺寸物料适配</strong>（小红书竖图 + 横版海报）的掌控力。三张过程图组合呈现，是作品集中"能力证明"而非"流量证明"的核心板块。</div>
+            </div>
           </div>
         </div>
         <div class="work-item">
@@ -840,6 +969,10 @@ a:focus-visible, button:focus-visible {
             <span class="work-tag">ACCOUNT BRAND</span>
             <div class="work-title">新疆领队宾哥 · 抖音主页</div>
             <div class="work-desc">1788 粉丝 · 1.4万获赞 · 267 作品 · 多平台账号运营</div>
+            <div class="work-impact">
+              <span class="work-likes">粉丝 1788 · 获赞 1.4万</span>
+              <div class="work-impact-text"><strong>效果分析：</strong>「新疆旅游宾哥」作为抖音矩阵账号，267 条作品积累 1.4 万获赞，赞均约 52，属于<strong>高频稳定产出型账号</strong>。与小红书「山川回响」形成跨平台矩阵——小红书重攻略搜索，抖音重口播实况，双平台覆盖用户不同决策阶段。1.4 万获赞证明短视频口播内容在抖音有稳定自然流量。</div>
+            </div>
           </div>
         </div>
       </div>
